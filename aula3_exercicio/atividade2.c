@@ -13,8 +13,9 @@ int gera_tabuada(int numero) {
 
 int main (void) {
     int escolha;
-     printf("Digite um numero >>>>");
-     scanf("%d",&escolha);
+    
+     printf("Digite um numero >>>> ");
+     scanf("%d",&escolha);                 
 
     switch (escolha) {
         case 1:
