@@ -3,7 +3,7 @@
 
 int main (void) {
     char codigo[0];
-    double valorPrestacao, valorTotal;
+    double valorPrestacao, valorTotal, desconto;
     unsigned const int prestacao = 15;
     
     printf("Digite o valor total da compra >>>> ");
@@ -19,8 +19,9 @@ int main (void) {
             break;
 
         } else if (strcmp(codigo, "V") == 0 || strcmp(codigo, "v") == 0) {
+            desconto = valorTotal  - ((valorTotal * 15) / 100);
             
-            printf("Valor a vista: R$%.2lf", (valorTotal -= valorTotal * (15/100)));
+            printf("Valor a vista: R$%.2lf", desconto);
             break;
 
         } else {
