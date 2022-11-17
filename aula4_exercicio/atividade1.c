@@ -13,6 +13,7 @@ int main(void) {
         if (idadePedro == idadeJoana) {
             printf("Erro: as idades precisam ser diferentes!\n");
             continue;
+            
         } else {
             break;    
         }
@@ -20,7 +21,7 @@ int main(void) {
 
         if (idadeJoana > idadePedro) {
             printf("Joana e mais velha");
-            
+
         } else {
             printf("Pedro e mais velho");
         }
